@@ -1,0 +1,26 @@
+* /home/drako/esim-workspace/and_gate/and_gate.cir
+
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+xm2  net-_m1-pad3_ a_in net-_m2-pad3_ net-_m2-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm3  net-_m2-pad3_ b_in gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm1  vdd a_in net-_m1-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm4  vdd b_in net-_m1-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm5  y_out net-_m1-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm6  vdd net-_m1-pad3_ y_out vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+v1  vdd gnd 3.3v
+* u1  b_in a_in y_out port
+
+v1 a_in gnd pulse 0 1.8 0 0.1n 0.1n 5n 10n 
+v2 b_in gnd pulse 0 1.8 0 0.1n 0.1n 10n 20n 
+
+.tran 0.1n 40n
+
+* Control Statements 
+.control
+run
+plot v(a_in) v(b_in) v(y_out)
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

@@ -1,0 +1,42 @@
+* /home/drako/esim-workspace/wallace4bit/wallace4bit.cir
+
+.lib "~/eSim-Workspace/prelayout/sky130_fd_pr/models/sky130.lib.spice" tt
+
+.include fulladder.sub
+.include halfadder.sub
+.include wallace2tree.sub
+x1 a1 a0 b0 b1 e0 e1 net-_x1-pad7_ net-_x1-pad8_ wallace2tree
+x2 a3 a2 b0 b1 net-_x2-pad5_ net-_x2-pad6_ net-_x12-pad1_ ? wallace2tree
+x6 net-_x1-pad7_ net-_x2-pad5_ net-_x10-pad1_ net-_x6-pad4_ halfadder
+x7 net-_x1-pad8_ net-_x2-pad6_ net-_x6-pad4_ net-_x11-pad1_ net-_x7-pad5_ fulladder
+x3 a1 a0 b2 b3 net-_x10-pad2_ net-_x11-pad2_ net-_x3-pad7_ net-_x13-pad1_ wallace2tree
+x4 a3 a2 b2 b3 net-_x4-pad5_ net-_x4-pad6_ net-_x4-pad7_ net-_x13-pad2_ wallace2tree
+x10 net-_x10-pad1_ net-_x10-pad2_ e2 net-_x10-pad4_ halfadder
+x11 net-_x11-pad1_ net-_x11-pad2_ net-_x10-pad4_ e3 net-_x11-pad5_ fulladder
+x8 net-_x3-pad7_ net-_x4-pad5_ net-_x7-pad5_ net-_x12-pad2_ net-_x13-pad3_ fulladder
+x12 net-_x12-pad1_ net-_x12-pad2_ net-_x11-pad5_ e4 net-_x12-pad5_ fulladder
+x9 net-_x13-pad4_ net-_x4-pad6_ net-_x12-pad5_ e5 net-_x5-pad3_ fulladder
+x5 net-_x4-pad7_ net-_x13-pad5_ net-_x5-pad3_ e6 e7 fulladder
+* u1  a0 a1 a2 a3 a0 a1 a2 a3 b0 b0 b2 b2 b1 b1 b3 b3 e1 e0 e6 e7 e2 e3 e4 e5 port
+x13 net-_x13-pad1_ net-_x13-pad2_ net-_x13-pad3_ net-_x13-pad4_ net-_x13-pad5_ fulladder
+
+v1 a0 0 pulse 0 1.8 0 0.1n 0.1n 5n 10n 
+v2 a1 0 pulse 0 1.8 0 0.1n 0.1n 10n 20n 
+v3 a2 0 pulse 0 1.8 0 0.1n 0.1n 20n 40n 
+v4 a3 0 pulse 0 1.8 0 0.1n 0.1n 20n 40n 
+
+v5 b0 0 pulse 0 1.8 0 0.1n 0.1n 5n 10n 
+v6 b1 0 pulse 0 1.8 0 0.1n 0.1n 10n 20n 
+v7 b2 0 pulse 0 1.8 0 0.1n 0.1n 20n 40n 
+v8 b3 0 pulse 0 1.8 0 0.1n 0.1n 20n 40n 
+
+.tran 0.1n 40n
+
+* Control Statements 
+.control
+run
+plot e0 e6 e7 e2 e3 e4 e5
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

@@ -1,0 +1,13 @@
+* Subcircuit halfadder
+.subckt halfadder a b sum carry
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/halfadder/halfadder.cir
+.include xor_gate.sub
+.include and_gate.sub
+
+* u1  a b sum carry port
+x1 a b carry and_gate
+x2 a b sum xor_gate
+
+* Control Statements
+
+.ends halfadder

@@ -1,0 +1,161 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:inverter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 2N2219 Q2
+U 1 1 60C4BB74
+P 6500 3400
+F 0 "Q2" H 6700 3475 50  0000 L CNN
+F 1 "2N2219" H 6700 3400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-39-3" H 6700 3325 50  0001 L CIN
+F 3 "" H 6500 3400 50  0001 L CNN
+	1    6500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3400 6300 3400
+Wire Wire Line
+	6600 2950 6600 3200
+Wire Wire Line
+	6600 3600 6600 3700
+$Comp
+L eSim_VCC #PWR1
+U 1 1 60C8CA7E
+P 6600 2950
+F 0 "#PWR1" H 6600 2800 50  0001 C CNN
+F 1 "eSim_VCC" H 6600 3100 50  0000 C CNN
+F 2 "" H 6600 2950 50  0001 C CNN
+F 3 "" H 6600 2950 50  0001 C CNN
+	1    6600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR2
+U 1 1 60C8CAA3
+P 6600 3700
+F 0 "#PWR2" H 6600 3450 50  0001 C CNN
+F 1 "eSim_GND" H 6600 3550 50  0000 C CNN
+F 2 "" H 6600 3700 50  0001 C CNN
+F 3 "" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 3050
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 60C8D200
+P 6400 2950
+F 0 "#FLG1" H 6400 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 3100 50  0000 C CNN
+F 2 "" H 6400 2950 50  0001 C CNN
+F 3 "" H 6400 2950 50  0001 C CNN
+	1    6400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2950 6400 3050
+Connection ~ 6400 3050
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 60C8D2E9
+P 6900 3650
+F 0 "#FLG2" H 6900 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6900 3800 50  0000 C CNN
+F 2 "" H 6900 3650 50  0001 C CNN
+F 3 "" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3650 6900 3650
+Connection ~ 6600 3650
+Wire Wire Line
+	6400 3050 6600 3050
+$Comp
+L resistor R1
+U 1 1 60C8D3B5
+P 5850 3450
+F 0 "R1" H 5900 3580 50  0000 C CNN
+F 1 "10K" H 5900 3400 50  0000 C CNN
+F 2 "" H 5900 3430 30  0000 C CNN
+F 3 "" V 5900 3500 30  0000 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V0 #PWR?
+U 1 1 60C8D49E
+P 5600 3400
+F 0 "#PWR?" H 5600 3250 50  0001 C CNN
+F 1 "+1V0" H 5600 3540 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3400 5600 3400
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 60C8D503
+P 5600 3450
+F 0 "#FLG?" H 5600 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 3600 50  0000 C CNN
+F 2 "" H 5600 3450 50  0001 C CNN
+F 3 "" H 5600 3450 50  0001 C CNN
+	1    5600 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 3400 5600 3450
+$EndSCHEMATC

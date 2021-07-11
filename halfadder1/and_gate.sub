@@ -1,0 +1,13 @@
+* Subcircuit and_gate
+.subckt and_gate net-_m1-pad2_ net-_m3-pad2_ net-_m5-pad1_ 
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/and_gate/and_gate.cir
+m2  net-_m1-pad3_ net-_m1-pad2_ net-_m2-pad3_ net-_m2-pad3_ mosfet_n
+m3  net-_m2-pad3_ net-_m3-pad2_ gnd gnd mosfet_n
+m1  net-_m1-pad1_ net-_m1-pad2_ net-_m1-pad3_ net-_m1-pad1_ mosfet_p
+m4  net-_m1-pad1_ net-_m3-pad2_ net-_m1-pad3_ net-_m1-pad1_ mosfet_p
+m5  net-_m5-pad1_ net-_m1-pad3_ gnd gnd mosfet_n
+m6  net-_m1-pad1_ net-_m1-pad3_ net-_m5-pad1_ net-_m1-pad1_ mosfet_p
+v1  net-_m1-pad1_ gnd 3.3v
+* Control Statements
+
+.ends and_gate

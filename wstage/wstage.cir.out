@@ -1,0 +1,31 @@
+* /home/drako/esim-workspace/wstage/wstage.cir
+
+.include fulladder.sub
+.include and_gate.sub
+.include halfadder.sub
+x15 net-_u1-pad24_ net-_u1-pad22_ net-_x15-pad3_ and_gate
+x13 net-_u1-pad24_ net-_u1-pad19_ net-_x13-pad3_ and_gate
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ net-_u1-pad12_ net-_u1-pad13_ net-_u1-pad14_ net-_u1-pad15_ net-_u1-pad16_ net-_u1-pad17_ net-_u1-pad18_ net-_u1-pad19_ net-_u1-pad20_ net-_u1-pad21_ net-_u1-pad22_ net-_u1-pad23_ net-_u1-pad24_ port
+x16 net-_x15-pad3_ net-_u1-pad21_ net-_u1-pad23_ net-_x14-pad3_ halfadder
+x14 net-_x13-pad3_ net-_u1-pad18_ net-_x14-pad3_ net-_u1-pad20_ net-_x12-pad3_ fulladder
+x11 net-_u1-pad24_ net-_u1-pad16_ net-_x11-pad3_ and_gate
+x12 net-_x11-pad3_ net-_u1-pad15_ net-_x12-pad3_ net-_u1-pad17_ net-_x10-pad3_ fulladder
+x9 net-_u1-pad24_ net-_u1-pad13_ net-_x10-pad1_ and_gate
+x10 net-_x10-pad1_ net-_u1-pad12_ net-_x10-pad3_ net-_u1-pad14_ net-_x10-pad5_ fulladder
+x7 net-_u1-pad24_ net-_u1-pad10_ net-_x7-pad3_ and_gate
+x8 net-_x7-pad3_ net-_u1-pad9_ net-_x10-pad5_ net-_u1-pad11_ net-_x6-pad3_ fulladder
+x5 net-_u1-pad24_ net-_u1-pad7_ net-_x5-pad3_ and_gate
+x6 net-_x5-pad3_ net-_u1-pad6_ net-_x6-pad3_ net-_u1-pad8_ net-_x4-pad3_ fulladder
+x3 net-_u1-pad24_ net-_u1-pad4_ net-_x3-pad3_ and_gate
+x4 net-_x3-pad3_ net-_u1-pad3_ net-_x4-pad3_ net-_u1-pad5_ net-_x2-pad1_ fulladder
+x1 net-_u1-pad24_ net-_u1-pad1_ net-_x1-pad3_ and_gate
+x2 net-_x2-pad1_ net-_x1-pad3_ net-_u1-pad2_ ? halfadder
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

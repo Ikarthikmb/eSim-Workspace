@@ -1,0 +1,23 @@
+* /home/drako/esim-workspace/andand/andand.cir
+
+.options wnflag=1
+
+.include and_gate.sub
+
+xgate1 a_in b_in op0 and_gate
+xgate2 op0 b_in op1 and_gate
+
+
+.tran 0.1us 40us
+
+v2 a_in gnd pulse(0 1.8 0 0 0 5us 10us)
+v3 b_in gnd pulse(0 1.8 0 0 0 10us 20us)
+
+* Control Statements 
+.control
+run
+plot op0 op1
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

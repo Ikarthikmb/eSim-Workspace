@@ -1,0 +1,39 @@
+* /home/drako/esim-workspace/wstage2/wstage2.cir
+
+.lib "~/eSim-Workspace/prelayout/sky130_fd_pr/models/sky130.lib.spice" tt
+
+.include fulladder.sub
+.include and_gate.sub
+.include halfadder.sub
+x3 r0 p0 net-_x3-pad3_ and_gate
+* u1  q1 q0 q2 q3 p1 p2 p0 p3 r0 s4 s0 s1 s2 s3 port
+x5 net-_x3-pad3_ q0 s0 net-_x5-pad4_ halfadder
+x2 r0 p2 net-_x2-pad3_ and_gate
+x4 r0 p3 net-_x4-pad3_ and_gate
+x1 r0 p1 net-_x1-pad3_ and_gate
+x6 net-_x1-pad3_ q1 net-_x5-pad4_ s1 net-_x6-pad5_ fulladder
+x7 net-_x2-pad3_ q2 net-_x6-pad5_ s2 net-_x7-pad5_ fulladder
+x8 net-_x4-pad3_ q3 net-_x7-pad5_ s3 s4 fulladder
+
+v1 r0 gnd pulse 0 1.8 0 0.1n 0.1n 4n 8n
+
+v2 q0 gnd pulse 0 1.8 0 0.1n 0.1n 4n 8n 
+v3 q1 gnd pulse 0 1.8 0 0.1n 0.1n 8n 16n 
+v4 q2 gnd pulse 0 1.8 0 0.1n 0.1n 4n 16n 
+v4 q3 gnd pulse 0 1.8 0 0.1n 0.1n 16n 8n 
+
+v5 p0 gnd pulse 0 1.8 0 0.1n 0.1n 4n 8n 
+v6 p1 gnd pulse 0 1.8 0 0.1n 0.1n 8n 16n 
+v7 p2 gnd pulse 0 1.8 0 0.1n 0.1n 8n 32n 
+v8 p3 gnd pulse 0 1.8 0 0.1n 0.1n 16n 4n 
+
+.tran 0.1n 32n
+
+* Control Statements 
+.control
+run
+plot s4 s0 s1 s2 s3
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

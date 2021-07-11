@@ -1,0 +1,36 @@
+* /home/drako/esim-workspace/andand/andand.cir
+
+.options wnflag=1
+
+xgate1 a_in b_in op0 and_gate
+xgate2 op0 b_in op1 and_gate
+
+
+.subckt and_gate a b out
+
+.lib "../prelayout/sky130_fd_pr/models/sky130.lib.spice" tt
+
+xm2  net-_m1-pad3_ a net-_m2-pad3_ net-_m2-pad3_ sky130_fd_pr__nfet_01v8 w=1u l=0.5u m=1u
+xm3  net-_m2-pad3_ b gnd gnd sky130_fd_pr__nfet_01v8 w=1u l=0.5u m=1u
+xm1  vdd a net-_m1-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1u l=0.5u m=1u
+xm4  vdd b net-_m1-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1u l=0.5u m=1u
+xm5  out net-_m1-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=1u l=0.5u m=1u
+xm6  vdd net-_m1-pad3_ out vdd sky130_fd_pr__pfet_01v8 w=1u l=0.5u m=1u
+vdd vdd gnd  dc 3.3
+* Control Statements
+
+.ends and_gate
+
+.tran 0.1us 40us
+
+v2 a_in gnd pulse(0 1.8 0 0 0 5us 10us)
+v3 b_in gnd pulse(0 1.8 0 0 0 10us 20us)
+
+* Control Statements 
+.control
+run
+plot op0 op1
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

@@ -1,0 +1,20 @@
+* Subcircuit and_gate
+.subckt and_gate a b out 
+
+.param temp=27
+
+.lib "../prelayout/sky130_fd_pr/models/sky130.lib.spice" tt
+.global gnd
+
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/and_gate/and_gate.cir
+
+xm2  net-_m1-pad3_ a net-_m2-pad3_ net-_m2-pad3_ sky130_fd_pr__nfet_01v8 w=1u l=0.5u m=1u
+xm3  net-_m2-pad3_ b gnd gnd sky130_fd_pr__nfet_01v8 w=1u l=0.5u m=1u
+xm1  vdd a net-_m1-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1u l=0.5u m=1u
+xm4  vdd b net-_m1-pad3_ vdd sky130_fd_pr__pfet_01v8 w=1u l=0.5u m=1u
+xm5  out net-_m1-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=1u l=0.5u m=1u
+xm6  vdd net-_m1-pad3_ out vdd sky130_fd_pr__pfet_01v8 w=1u l=0.5u m=1u
+vdd vdd gnd  dc 3.3
+* Control Statements
+
+.ends and_gate

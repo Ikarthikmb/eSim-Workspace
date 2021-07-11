@@ -1,0 +1,19 @@
+* /home/drako/eSim-Workspace/andand/andand.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Tue Jun 29 02:03:31 2021
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  /Sheet60DA3111/b0 /Sheet60DA3111/a0 /Sheet60DA3111/m0 PORT		
+* Sheet Name: /Sheet60DA3111/
+M2  Net-_M1-Pad3_ /Sheet60DA3111/a0 Net-_M2-Pad3_ Net-_M2-Pad3_ mosfet_n		
+M3  Net-_M2-Pad3_ /Sheet60DA3111/b0 GND GND mosfet_n		
+M1  /Sheet60DA3111/vdd /Sheet60DA3111/a0 Net-_M1-Pad3_ /Sheet60DA3111/vdd mosfet_p		
+M4  /Sheet60DA3111/vdd /Sheet60DA3111/b0 Net-_M1-Pad3_ /Sheet60DA3111/vdd mosfet_p		
+M5  /Sheet60DA3111/m0 Net-_M1-Pad3_ GND GND mosfet_n		
+M6  /Sheet60DA3111/vdd Net-_M1-Pad3_ /Sheet60DA3111/m0 /Sheet60DA3111/vdd mosfet_p		
+v1  /Sheet60DA3111/vdd GND DC		
+
+.end

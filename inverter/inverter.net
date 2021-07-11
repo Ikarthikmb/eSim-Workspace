@@ -1,0 +1,72 @@
+(export (version D)
+  (design
+    (source /home/drako/eSim-Workspace/inverter/inverter.sch)
+    (date "Tue Jun 15 21:47:37 2021")
+    (tool "Eeschema 4.0.7-e2-6376~61~ubuntu18.04.1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source inverter.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref Q2)
+      (value 2N2219)
+      (footprint TO_SOT_Packages_THT:TO-39-3)
+      (libsource (lib transistors) (part 2N2219))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 60C4BB74))
+    (comp (ref R1)
+      (value 10K)
+      (libsource (lib eSim_Devices) (part resistor))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 60C8D3B5)))
+  (libparts
+    (libpart (lib transistors) (part 2N2219)
+      (aliases
+        (alias BC140)
+        (alias BC141))
+      (description "Vce 50V, Ic 800mA, NPN Transistor, TO-39")
+      (docs http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF)
+      (footprints
+        (fp TO?39*))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) 2N2219)
+        (field (name Footprint) TO_SOT_Packages_THT:TO-39-3))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type passive))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib eSim_Devices) (part eSim_R)
+      (aliases
+        (alias resistor))
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) eSim_R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
+  (libraries
+    (library (logical transistors)
+      (uri /usr/share/kicad/library/transistors.lib))
+    (library (logical eSim_Devices)
+      (uri /usr/share/kicad/library/eSim_Devices.lib)))
+  (nets
+    (net (code 1) (name +1V0)
+      (node (ref R1) (pin 1)))
+    (net (code 2) (name "Net-(Q2-Pad2)")
+      (node (ref Q2) (pin 2))
+      (node (ref R1) (pin 2)))
+    (net (code 3) (name GND)
+      (node (ref Q2) (pin 1)))
+    (net (code 4) (name VCC)
+      (node (ref Q2) (pin 3)))))

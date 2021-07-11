@@ -1,0 +1,19 @@
+* /home/drako/esim-workspace/andand/andand.cir
+
+* u1  /sheet60da3111/b0 /sheet60da3111/a0 /sheet60da3111/m0 port
+xm2  net-_m1-pad3_ /sheet60da3111/a0 net-_m2-pad3_ net-_m2-pad3_ mosfet_n
+xm3  net-_m2-pad3_ /sheet60da3111/b0 gnd gnd mosfet_n
+xm1  /sheet60da3111/vdd /sheet60da3111/a0 net-_m1-pad3_ /sheet60da3111/vdd mosfet_p
+xm4  /sheet60da3111/vdd /sheet60da3111/b0 net-_m1-pad3_ /sheet60da3111/vdd mosfet_p
+xm5  /sheet60da3111/m0 net-_m1-pad3_ gnd gnd mosfet_n
+xm6  /sheet60da3111/vdd net-_m1-pad3_ /sheet60da3111/m0 /sheet60da3111/vdd mosfet_p
+v1 /sheet60da3111/vdd gnd  dc 0
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

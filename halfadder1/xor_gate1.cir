@@ -1,0 +1,34 @@
+* /home/drako/applications/esim-2.1/library/subcircuitlibrary/xor_gate/xor_gate.cir
+
+.lib "~/eSim-Workspace/prelayout/sky130_fd_pr/models/sky130.lib.spice" tt
+
+xm5  net-_m10-pad3_ b net-_m5-pad3_ net-_m5-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm8  net-_m10-pad1_ b_bar net-_m10-pad3_ net-_m10-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm7  vdd b net-_m10-pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm10  net-_m10-pad1_ a net-_m10-pad3_ net-_m10-pad1_ sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm6  net-_m5-pad3_ a_bar gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm11  net-_m10-pad3_ b_bar net-_m11-pad3_ net-_m11-pad3_ sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm12  net-_m11-pad3_ a gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm1  b_bar b gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm3  vdd b b_bar vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm2  a_bar a gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm4  vdd a a_bar vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+* u1  a b yout port
+xm13  yout net-_m10-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.5 m=1
+xm14  vdd net-_m10-pad3_ yout vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+xm9  vdd a_bar net-_m10-pad1_ vdd sky130_fd_pr__pfet_01v8 w=1 l=0.5 m=1
+v1 vdd gnd  dc 3.3
+
+v2 a gnd pulse 0 1.8 0 0 0 5u 10u
+v3 b gnd pulse 0 1.8 0 0 0 10u 20u
+
+.tran 0.1u 40u
+
+* Control Statements 
+.control
+run
+plot a b yout
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

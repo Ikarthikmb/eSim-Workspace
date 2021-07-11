@@ -1,0 +1,800 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:wallace4bit-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wallace2tree x1
+U 1 1 60DB64D6
+P 2975 1400
+F 0 "x1" H 2700 1400 60  0000 C CNN
+F 1 "wallace2tree" H 2725 1050 60  0000 C CNN
+F 2 "" H 2050 1050 60  0001 C CNN
+F 3 "" H 2050 1050 60  0001 C CNN
+	1    2975 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L wallace2tree x2
+U 1 1 60DB652E
+P 3000 2825
+F 0 "x2" H 2725 2825 60  0000 C CNN
+F 1 "wallace2tree" H 2750 2475 60  0000 C CNN
+F 2 "" H 2075 2475 60  0001 C CNN
+F 3 "" H 2075 2475 60  0001 C CNN
+	1    3000 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L halfadder x6
+U 1 1 60DB67F8
+P 4225 1350
+F 0 "x6" H 3900 750 60  0000 C CNN
+F 1 "halfadder" H 4050 1100 60  0000 C CNN
+F 2 "" V 4050 1100 60  0001 C CNN
+F 3 "" V 4050 1100 60  0001 C CNN
+	1    4225 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L fulladder x7
+U 1 1 60DB6A25
+P 4600 2400
+F 0 "x7" H 4275 1800 60  0000 C CNN
+F 1 "fulladder" H 4425 2150 60  0000 C CNN
+F 2 "" V 4425 2150 60  0001 C CNN
+F 3 "" V 4425 2150 60  0001 C CNN
+	1    4600 2400
+	0    -1   -1   0   
+$EndComp
+Text Notes 3275 1150 0    60   ~ 0
+a0b0\n
+Text Notes 3100 1275 0    60   ~ 0
+(a0b1+a1b0)
+Text Notes 3300 1400 0    60   ~ 0
+a1b1
+Text Notes 3300 1525 0    60   ~ 0
+c0
+Text Notes 2425 775  0    60   ~ 0
+b0
+Text Notes 2475 2175 0    60   ~ 0
+b0
+Text Notes 2800 750  0    60   ~ 0
+b1\n
+Text Notes 2850 2175 0    60   ~ 0
+b1\n
+Text Notes 2075 1575 0    60   ~ 0
+a1
+Text Notes 2075 1350 0    60   ~ 0
+a0\n
+Text Notes 2100 2725 0    60   ~ 0
+a2\n
+Text Notes 2100 2975 0    60   ~ 0
+a3
+$Comp
+L wallace2tree x3
+U 1 1 60DB6D44
+P 3000 4150
+F 0 "x3" H 2725 4150 60  0000 C CNN
+F 1 "wallace2tree" H 2750 3800 60  0000 C CNN
+F 2 "" H 2075 3800 60  0001 C CNN
+F 3 "" H 2075 3800 60  0001 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L wallace2tree x4
+U 1 1 60DB6D9C
+P 3025 5475
+F 0 "x4" H 2750 5475 60  0000 C CNN
+F 1 "wallace2tree" H 2775 5125 60  0000 C CNN
+F 2 "" H 2100 5125 60  0001 C CNN
+F 3 "" H 2100 5125 60  0001 C CNN
+	1    3025 5475
+	1    0    0    -1  
+$EndComp
+Text Notes 2525 3525 0    60   ~ 0
+b2\n
+Text Notes 2850 3525 0    60   ~ 0
+b3
+Text Notes 2575 4850 0    60   ~ 0
+b2\n
+Text Notes 2850 4850 0    60   ~ 0
+b3
+Text Notes 2100 4000 0    60   ~ 0
+a0
+Text Notes 2100 4275 0    60   ~ 0
+a1
+Text Notes 2100 5375 0    60   ~ 0
+a2
+Text Notes 2100 5600 0    60   ~ 0
+a3
+Text Notes 4925 1325 0    60   ~ 0
+(a1b1 + a2b0)
+Text Notes 4450 1950 0    60   ~ 0
+c11
+Text Notes 3250 2550 0    60   ~ 0
+a2b0
+$Comp
+L halfadder x10
+U 1 1 60DB7049
+P 6225 3050
+F 0 "x10" H 5900 2450 60  0000 C CNN
+F 1 "halfadder" H 6050 2800 60  0000 C CNN
+F 2 "" V 6050 2800 60  0001 C CNN
+F 3 "" V 6050 2800 60  0001 C CNN
+	1    6225 3050
+	0    -1   -1   0   
+$EndComp
+Text Notes 5200 2300 0    60   ~ 0
+c0+c11+ a2b1 + a3b0
+Text Notes 3775 1100 0    60   ~ 0
+z0
+Text Notes 3800 1300 0    60   ~ 0
+z1
+Text Notes 7150 3025 0    60   ~ 0
+z2
+$Comp
+L fulladder x11
+U 1 1 60DB7893
+P 6225 4125
+F 0 "x11" H 5900 3525 60  0000 C CNN
+F 1 "fulladder" H 6050 3875 60  0000 C CNN
+F 2 "" V 6050 3875 60  0001 C CNN
+F 3 "" V 6050 3875 60  0001 C CNN
+	1    6225 4125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L fulladder x8
+U 1 1 60DB7F1F
+P 4600 4550
+F 0 "x8" H 4275 3950 60  0000 C CNN
+F 1 "fulladder" H 4425 4300 60  0000 C CNN
+F 2 "" V 4425 4300 60  0001 C CNN
+F 3 "" V 4425 4300 60  0001 C CNN
+	1    4600 4550
+	0    -1   -1   0   
+$EndComp
+Text Notes 6950 4100 0    60   ~ 0
+z3
+$Comp
+L fulladder x12
+U 1 1 60DB844B
+P 6225 5325
+F 0 "x12" H 5900 4725 60  0000 C CNN
+F 1 "fulladder" H 6050 5075 60  0000 C CNN
+F 2 "" V 6050 5075 60  0001 C CNN
+F 3 "" V 6050 5075 60  0001 C CNN
+	1    6225 5325
+	0    -1   -1   0   
+$EndComp
+Text Notes 6900 5250 0    60   ~ 0
+z4
+$Comp
+L fulladder x9
+U 1 1 60DB86D2
+P 5450 6125
+F 0 "x9" H 5125 5525 60  0000 C CNN
+F 1 "fulladder" H 5275 5875 60  0000 C CNN
+F 2 "" V 5275 5875 60  0001 C CNN
+F 3 "" V 5275 5875 60  0001 C CNN
+	1    5450 6125
+	0    -1   -1   0   
+$EndComp
+Text Notes 7000 6125 0    60   ~ 0
+z5
+$Comp
+L fulladder x5
+U 1 1 60DB88D6
+P 3925 6825
+F 0 "x5" H 3600 6225 60  0000 C CNN
+F 1 "fulladder" H 3750 6575 60  0000 C CNN
+F 2 "" V 3750 6575 60  0001 C CNN
+F 3 "" V 3750 6575 60  0001 C CNN
+	1    3925 6825
+	0    -1   -1   0   
+$EndComp
+Text Notes 4700 6800 0    60   ~ 0
+z6
+Text Notes 2450 7375 0    60   ~ 0
+z7
+Wire Wire Line
+	4350 2700 3175 2700
+Wire Wire Line
+	3175 2575 3975 2575
+Wire Wire Line
+	3975 2575 3975 1650
+Wire Wire Line
+	3150 1400 3975 1400
+Wire Wire Line
+	3150 1525 3625 1525
+Wire Wire Line
+	3625 1525 3625 2450
+Wire Wire Line
+	3625 2450 4350 2450
+Wire Wire Line
+	3150 1150 3625 1150
+Wire Wire Line
+	3150 1275 3900 1275
+Wire Wire Line
+	4350 2000 4725 2000
+Wire Wire Line
+	4725 2000 4725 2100
+Wire Wire Line
+	4950 1400 5975 1400
+Wire Wire Line
+	5975 1400 5975 3100
+Wire Wire Line
+	6950 3100 7575 3100
+Wire Wire Line
+	5325 2450 5550 2450
+Wire Wire Line
+	5550 2450 5550 4175
+Wire Wire Line
+	5550 4175 5975 4175
+Wire Wire Line
+	4725 3050 4725 4250
+Wire Wire Line
+	3175 4150 4350 4150
+Wire Wire Line
+	4350 4150 4350 4600
+Wire Wire Line
+	3200 5225 4350 4850
+Wire Wire Line
+	5975 4425 5175 4425
+Wire Wire Line
+	5175 4425 5175 4025
+Wire Wire Line
+	5175 4025 3175 4025
+Wire Wire Line
+	3175 3900 3175 3350
+Wire Wire Line
+	3175 3350 5975 3350
+Wire Wire Line
+	6350 3700 6350 3825
+Wire Wire Line
+	5325 4600 5325 5625
+Wire Wire Line
+	5325 5625 5975 5625
+Wire Wire Line
+	6350 4775 6350 5025
+Wire Wire Line
+	3175 2825 3900 2825
+Wire Wire Line
+	3900 2825 3900 3800
+Wire Wire Line
+	3900 3800 5725 3800
+Wire Wire Line
+	5725 3800 5725 5375
+Wire Wire Line
+	5725 5375 5975 5375
+Wire Wire Line
+	6350 5975 6025 5975
+Wire Wire Line
+	6025 5975 6025 5825
+Wire Wire Line
+	6025 5825 5575 5825
+Wire Wire Line
+	3200 5350 3900 5350
+Wire Wire Line
+	3900 5350 3900 6425
+Wire Wire Line
+	3900 6425 5200 6425
+Wire Wire Line
+	6175 6175 7675 6175
+Wire Wire Line
+	5575 6775 5225 6775
+Wire Wire Line
+	5225 6775 5225 6525
+Wire Wire Line
+	5225 6525 4050 6525
+Wire Wire Line
+	3675 6875 3675 5475
+Wire Wire Line
+	3675 5475 3200 5475
+Wire Wire Line
+	3250 7125 3675 7125
+Wire Wire Line
+	4650 6875 4800 6875
+Wire Wire Line
+	6950 5375 7625 5375
+Wire Wire Line
+	6950 4175 7600 4175
+Wire Wire Line
+	3625 1150 3625 675 
+Wire Wire Line
+	3625 675  4025 675 
+Wire Wire Line
+	3900 1275 3900 975 
+Wire Wire Line
+	3900 975  4000 975 
+Wire Wire Line
+	2275 1300 1800 1300
+Wire Wire Line
+	2275 1475 1800 1475
+Wire Wire Line
+	2300 2725 1950 2725
+Wire Wire Line
+	2300 2900 1950 2900
+Wire Wire Line
+	2300 4050 1950 4050
+Wire Wire Line
+	2300 4225 1950 4225
+Wire Wire Line
+	2325 5375 2000 5375
+Wire Wire Line
+	2325 5550 2000 5550
+$Comp
+L PORT U1
+U 1 1 60DB974B
+P 1550 1300
+F 0 "U1" H 1600 1400 30  0000 C CNN
+F 1 "PORT" H 1550 1300 30  0000 C CNN
+F 2 "" H 1550 1300 60  0000 C CNN
+F 3 "" H 1550 1300 60  0000 C CNN
+	1    1550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 2 1 60DB9899
+P 1550 1475
+F 0 "U1" H 1600 1575 30  0000 C CNN
+F 1 "PORT" H 1550 1475 30  0000 C CNN
+F 2 "" H 1550 1475 60  0000 C CNN
+F 3 "" H 1550 1475 60  0000 C CNN
+	2    1550 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 3 1 60DB98DF
+P 1700 2725
+F 0 "U1" H 1750 2825 30  0000 C CNN
+F 1 "PORT" H 1700 2725 30  0000 C CNN
+F 2 "" H 1700 2725 60  0000 C CNN
+F 3 "" H 1700 2725 60  0000 C CNN
+	3    1700 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 4 1 60DB9994
+P 1700 2900
+F 0 "U1" H 1750 3000 30  0000 C CNN
+F 1 "PORT" H 1700 2900 30  0000 C CNN
+F 2 "" H 1700 2900 60  0000 C CNN
+F 3 "" H 1700 2900 60  0000 C CNN
+	4    1700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 10 1 60DB9A48
+P 2075 2025
+F 0 "U1" H 2125 2125 30  0000 C CNN
+F 1 "PORT" H 2075 2025 30  0000 C CNN
+F 2 "" H 2075 2025 60  0000 C CNN
+F 3 "" H 2075 2025 60  0000 C CNN
+	10   2075 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 14 1 60DB9B21
+P 3150 2000
+F 0 "U1" H 3200 2100 30  0000 C CNN
+F 1 "PORT" H 3150 2000 30  0000 C CNN
+F 2 "" H 3150 2000 60  0000 C CNN
+F 3 "" H 3150 2000 60  0000 C CNN
+	14   3150 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 13 1 60DB9B73
+P 3175 600
+F 0 "U1" H 3225 700 30  0000 C CNN
+F 1 "PORT" H 3175 600 30  0000 C CNN
+F 2 "" H 3175 600 60  0000 C CNN
+F 3 "" H 3175 600 60  0000 C CNN
+	13   3175 600 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 9 1 60DB9C17
+P 2100 625
+F 0 "U1" H 2150 725 30  0000 C CNN
+F 1 "PORT" H 2100 625 30  0000 C CNN
+F 2 "" H 2100 625 60  0000 C CNN
+F 3 "" H 2100 625 60  0000 C CNN
+	9    2100 625 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 15 1 60DB9D1F
+P 3050 3350
+F 0 "U1" H 3100 3450 30  0000 C CNN
+F 1 "PORT" H 3050 3350 30  0000 C CNN
+F 2 "" H 3050 3350 60  0000 C CNN
+F 3 "" H 3050 3350 60  0000 C CNN
+	15   3050 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 11 1 60DB9E3C
+P 2200 3375
+F 0 "U1" H 2250 3475 30  0000 C CNN
+F 1 "PORT" H 2200 3375 30  0000 C CNN
+F 2 "" H 2200 3375 60  0000 C CNN
+F 3 "" H 2200 3375 60  0000 C CNN
+	11   2200 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 16 1 60DB9E96
+P 3175 4700
+F 0 "U1" H 3225 4800 30  0000 C CNN
+F 1 "PORT" H 3175 4700 30  0000 C CNN
+F 2 "" H 3175 4700 60  0000 C CNN
+F 3 "" H 3175 4700 60  0000 C CNN
+	16   3175 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 12 1 60DB9F99
+P 2175 4725
+F 0 "U1" H 2225 4825 30  0000 C CNN
+F 1 "PORT" H 2175 4725 30  0000 C CNN
+F 2 "" H 2175 4725 60  0000 C CNN
+F 3 "" H 2175 4725 60  0000 C CNN
+	12   2175 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 5 1 60DBA059
+P 1700 4050
+F 0 "U1" H 1750 4150 30  0000 C CNN
+F 1 "PORT" H 1700 4050 30  0000 C CNN
+F 2 "" H 1700 4050 60  0000 C CNN
+F 3 "" H 1700 4050 60  0000 C CNN
+	5    1700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 6 1 60DBA0CC
+P 1700 4225
+F 0 "U1" H 1750 4325 30  0000 C CNN
+F 1 "PORT" H 1700 4225 30  0000 C CNN
+F 2 "" H 1700 4225 60  0000 C CNN
+F 3 "" H 1700 4225 60  0000 C CNN
+	6    1700 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 7 1 60DBA1A2
+P 1750 5375
+F 0 "U1" H 1800 5475 30  0000 C CNN
+F 1 "PORT" H 1750 5375 30  0000 C CNN
+F 2 "" H 1750 5375 60  0000 C CNN
+F 3 "" H 1750 5375 60  0000 C CNN
+	7    1750 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 8 1 60DBA233
+P 1750 5550
+F 0 "U1" H 1800 5650 30  0000 C CNN
+F 1 "PORT" H 1750 5550 30  0000 C CNN
+F 2 "" H 1750 5550 60  0000 C CNN
+F 3 "" H 1750 5550 60  0000 C CNN
+	8    1750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 18 1 60DBA32F
+P 4275 675
+F 0 "U1" H 4325 775 30  0000 C CNN
+F 1 "PORT" H 4275 675 30  0000 C CNN
+F 2 "" H 4275 675 60  0000 C CNN
+F 3 "" H 4275 675 60  0000 C CNN
+	18   4275 675 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 17 1 60DBA512
+P 4250 975
+F 0 "U1" H 4300 1075 30  0000 C CNN
+F 1 "PORT" H 4250 975 30  0000 C CNN
+F 2 "" H 4250 975 60  0000 C CNN
+F 3 "" H 4250 975 60  0000 C CNN
+	17   4250 975 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 21 1 60DBA5B2
+P 7825 3100
+F 0 "U1" H 7875 3200 30  0000 C CNN
+F 1 "PORT" H 7825 3100 30  0000 C CNN
+F 2 "" H 7825 3100 60  0000 C CNN
+F 3 "" H 7825 3100 60  0000 C CNN
+	21   7825 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 22 1 60DBA8E8
+P 7850 4175
+F 0 "U1" H 7900 4275 30  0000 C CNN
+F 1 "PORT" H 7850 4175 30  0000 C CNN
+F 2 "" H 7850 4175 60  0000 C CNN
+F 3 "" H 7850 4175 60  0000 C CNN
+	22   7850 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 23 1 60DBA98C
+P 7875 5375
+F 0 "U1" H 7925 5475 30  0000 C CNN
+F 1 "PORT" H 7875 5375 30  0000 C CNN
+F 2 "" H 7875 5375 60  0000 C CNN
+F 3 "" H 7875 5375 60  0000 C CNN
+	23   7875 5375
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 24 1 60DBAAD0
+P 7925 6175
+F 0 "U1" H 7975 6275 30  0000 C CNN
+F 1 "PORT" H 7925 6175 30  0000 C CNN
+F 2 "" H 7925 6175 60  0000 C CNN
+F 3 "" H 7925 6175 60  0000 C CNN
+	24   7925 6175
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 19 1 60DBAB6C
+P 5050 6875
+F 0 "U1" H 5100 6975 30  0000 C CNN
+F 1 "PORT" H 5050 6875 30  0000 C CNN
+F 2 "" H 5050 6875 60  0000 C CNN
+F 3 "" H 5050 6875 60  0000 C CNN
+	19   5050 6875
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 20 1 60DBAF75
+P 2125 7475
+F 0 "U1" H 2175 7575 30  0000 C CNN
+F 1 "PORT" H 2125 7475 30  0000 C CNN
+F 2 "" H 2125 7475 60  0000 C CNN
+F 3 "" H 2125 7475 60  0000 C CNN
+	20   2125 7475
+	1    0    0    -1  
+$EndComp
+Text Notes 3200 2700 0    60   ~ 0
+(a2b1 + a3b0)
+Text Notes 3300 2825 0    60   ~ 0
+a3b1
+Text Notes 3250 2925 0    60   ~ 0
+c1
+Text Notes 3225 3900 0    60   ~ 0
+a0b2
+Text Notes 3325 4000 0    60   ~ 0
+(a0b3 + a1b2)
+Text Notes 3250 4150 0    60   ~ 0
+a1b3
+Text Notes 3175 4250 0    60   ~ 0
+c2
+Text Notes 3150 5700 0    60   ~ 0
+c3
+Text Notes 3200 5325 0    60   ~ 0
+(a2b3 + a3b2)
+Text Notes 3225 5200 0    60   ~ 0
+a2b2
+Text Notes 3225 5450 0    60   ~ 0
+a3b3
+Wire Wire Line
+	3175 4275 4175 4275
+Wire Wire Line
+	4175 4275 4175 5200
+Wire Wire Line
+	4175 5200 4650 5200
+Wire Wire Line
+	2375 7475 4050 7475
+$Comp
+L fulladder x13
+U 1 1 60DBE1CE
+P 4825 5625
+F 0 "x13" H 4500 5025 60  0000 C CNN
+F 1 "fulladder" H 4650 5375 60  0000 C CNN
+F 2 "" V 4650 5375 60  0001 C CNN
+F 3 "" V 4650 5375 60  0001 C CNN
+	1    4825 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 5200 5125 5200
+Wire Wire Line
+	5125 5200 5125 5750
+Wire Wire Line
+	4775 6350 5200 6350
+Wire Wire Line
+	5200 6350 5200 6175
+Wire Wire Line
+	4650 5200 4650 5375
+Wire Wire Line
+	4650 5375 4775 5375
+Wire Wire Line
+	3200 5600 4050 5600
+Wire Wire Line
+	4050 5600 4050 5375
+Wire Wire Line
+	4050 5375 4525 5375
+Wire Wire Line
+	4175 5750 3250 5750
+Wire Wire Line
+	3250 5750 3250 7125
+Text Notes 4800 3125 0    60   ~ 0
+c12
+Text Notes 4825 5125 0    60   ~ 0
+c13
+Text Notes 4150 5900 0    60   ~ 0
+c14
+Text Notes 6100 3725 0    60   ~ 0
+c15
+Text Notes 6450 4850 0    60   ~ 0
+c16
+Text Notes 6450 5950 0    60   ~ 0
+c17
+Text Notes 5750 6775 0    60   ~ 0
+c18
+Text Notes 3550 7400 0    60   ~ 0
+c19
+NoConn ~ 3175 2950
+Text Label 1875 1300 0    60   ~ 0
+a0
+Text Label 2000 4050 0    60   ~ 0
+a0
+Text Label 1900 1475 0    60   ~ 0
+a1
+Text Label 2000 4225 0    60   ~ 0
+a1
+Text Label 1975 2725 0    60   ~ 0
+a2
+Text Label 2025 5375 0    60   ~ 0
+a2
+Text Label 2025 5550 0    60   ~ 0
+a3
+Text Label 2025 2900 0    60   ~ 0
+a3
+Text Label 2450 625  0    60   ~ 0
+b0
+Wire Wire Line
+	2350 625  2575 625 
+Wire Wire Line
+	2575 625  2575 875 
+Wire Wire Line
+	2925 600  2725 600 
+Wire Wire Line
+	2725 600  2725 875 
+Text Label 2825 600  0    60   ~ 0
+b1
+Text Label 2425 2025 0    60   ~ 0
+b0
+Wire Wire Line
+	2900 2000 2750 2000
+Wire Wire Line
+	2750 2000 2750 2300
+Wire Wire Line
+	2600 2300 2600 2025
+Wire Wire Line
+	2600 2025 2325 2025
+Text Label 2775 2000 0    60   ~ 0
+b1
+Wire Wire Line
+	2450 3375 2600 3375
+Wire Wire Line
+	2600 3375 2600 3625
+Wire Wire Line
+	2800 3350 2750 3350
+Wire Wire Line
+	2750 3350 2750 3625
+Text Label 2500 3375 0    60   ~ 0
+b2
+Text Label 2750 3350 0    60   ~ 0
+b3
+Text Label 2525 4725 0    60   ~ 0
+b2
+Text Label 2800 4700 0    60   ~ 0
+b3
+Wire Wire Line
+	2425 4725 2625 4725
+Wire Wire Line
+	2625 4725 2625 4950
+Wire Wire Line
+	2775 4950 2775 4700
+Wire Wire Line
+	2775 4700 2925 4700
+Text Label 2675 7475 0    60   ~ 0
+e7
+Text Label 4700 6875 0    60   ~ 0
+e6
+Text Label 7350 6175 0    60   ~ 0
+e5
+Text Label 7300 5375 0    60   ~ 0
+e4
+Text Label 7300 4175 0    60   ~ 0
+e3
+Text Label 7375 3100 0    60   ~ 0
+e2
+Text Label 3900 975  0    60   ~ 0
+e1
+Text Label 3825 675  0    60   ~ 0
+e0
+$EndSCHEMATC

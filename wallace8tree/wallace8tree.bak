@@ -1,0 +1,339 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wstage U?
+U 1 1 60DB4F8B
+P 8075 3125
+F 0 "U?" H 8675 3125 60  0000 C CNN
+F 1 "wstage" H 7675 3125 60  0000 C CNN
+F 2 "" H 8675 3125 60  0001 C CNN
+F 3 "" H 8675 3125 60  0001 C CNN
+	1    8075 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB50F5
+P 10425 1550
+F 0 "x?" H 10375 1750 60  0000 C CNN
+F 1 "and_gate" H 10400 1350 60  0000 C CNN
+F 2 "" H 10425 1550 60  0001 C CNN
+F 3 "" H 10425 1550 60  0001 C CNN
+	1    10425 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB514D
+P 6625 1500
+F 0 "x?" H 6575 1700 60  0000 C CNN
+F 1 "and_gate" H 6600 1300 60  0000 C CNN
+F 2 "" H 6625 1500 60  0001 C CNN
+F 3 "" H 6625 1500 60  0001 C CNN
+	1    6625 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB523D
+P 7175 1525
+F 0 "x?" H 7125 1725 60  0000 C CNN
+F 1 "and_gate" H 7150 1325 60  0000 C CNN
+F 2 "" H 7175 1525 60  0001 C CNN
+F 3 "" H 7175 1525 60  0001 C CNN
+	1    7175 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB5243
+P 7725 1525
+F 0 "x?" H 7675 1725 60  0000 C CNN
+F 1 "and_gate" H 7700 1325 60  0000 C CNN
+F 2 "" H 7725 1525 60  0001 C CNN
+F 3 "" H 7725 1525 60  0001 C CNN
+	1    7725 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB53D1
+P 8250 1525
+F 0 "x?" H 8200 1725 60  0000 C CNN
+F 1 "and_gate" H 8225 1325 60  0000 C CNN
+F 2 "" H 8250 1525 60  0001 C CNN
+F 3 "" H 8250 1525 60  0001 C CNN
+	1    8250 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB53D7
+P 8800 1525
+F 0 "x?" H 8750 1725 60  0000 C CNN
+F 1 "and_gate" H 8775 1325 60  0000 C CNN
+F 2 "" H 8800 1525 60  0001 C CNN
+F 3 "" H 8800 1525 60  0001 C CNN
+	1    8800 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB53DD
+P 9350 1550
+F 0 "x?" H 9300 1750 60  0000 C CNN
+F 1 "and_gate" H 9325 1350 60  0000 C CNN
+F 2 "" H 9350 1550 60  0001 C CNN
+F 3 "" H 9350 1550 60  0001 C CNN
+	1    9350 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L and_gate x?
+U 1 1 60DB53E3
+P 9900 1550
+F 0 "x?" H 9850 1750 60  0000 C CNN
+F 1 "and_gate" H 9875 1350 60  0000 C CNN
+F 2 "" H 9900 1550 60  0001 C CNN
+F 3 "" H 9900 1550 60  0001 C CNN
+	1    9900 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8975 2000 8975 2575
+Wire Wire Line
+	8650 1950 8650 2575
+Wire Wire Line
+	8350 1875 8350 2575
+Wire Wire Line
+	8250 1875 8250 1950
+Wire Wire Line
+	8250 1950 8050 1950
+Wire Wire Line
+	8050 1950 8050 2575
+Wire Wire Line
+	7725 2575 7725 1875
+Wire Wire Line
+	7425 2575 7425 1875
+Wire Wire Line
+	7425 1875 7175 1875
+Wire Wire Line
+	7150 2575 7150 2000
+Wire Wire Line
+	7150 2000 6625 2000
+Wire Wire Line
+	6625 2000 6625 1850
+Wire Wire Line
+	8350 1875 8800 1875
+Wire Wire Line
+	8650 1950 9350 1950
+Wire Wire Line
+	9350 1950 9350 1900
+Wire Wire Line
+	8975 2000 9900 2000
+Wire Wire Line
+	9900 2000 9900 1900
+Wire Wire Line
+	6700 1075 6700 975 
+Wire Wire Line
+	6700 975  10800 975 
+Wire Wire Line
+	10500 975  10500 1125
+Connection ~ 10500 975 
+Wire Wire Line
+	10425 1900 10425 2325
+Wire Wire Line
+	10350 800  10350 1125
+Wire Wire Line
+	9825 1125 9825 775 
+Wire Wire Line
+	9975 1125 9975 975 
+Connection ~ 9975 975 
+Wire Wire Line
+	9425 1125 9425 975 
+Connection ~ 9425 975 
+Wire Wire Line
+	9275 1125 9275 800 
+Wire Wire Line
+	8725 1100 8725 800 
+Wire Wire Line
+	8875 1100 8875 975 
+Connection ~ 8875 975 
+Wire Wire Line
+	8325 1100 8325 975 
+Connection ~ 8325 975 
+Wire Wire Line
+	8175 1100 8175 800 
+Wire Wire Line
+	7800 1100 7800 975 
+Connection ~ 7800 975 
+Wire Wire Line
+	7250 1100 7250 975 
+Connection ~ 7250 975 
+Wire Wire Line
+	7100 1100 7100 875 
+Wire Wire Line
+	7650 1100 7650 825 
+Wire Wire Line
+	6550 1075 6550 850 
+$Comp
+L PORT U?
+U 1 1 60DB5E6A
+P 6550 600
+F 0 "U?" H 6600 700 30  0000 C CNN
+F 1 "PORT" H 6550 600 30  0000 C CNN
+F 2 "" H 6550 600 60  0000 C CNN
+F 3 "" H 6550 600 60  0000 C CNN
+	1    6550 600 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB5EFF
+P 7100 625
+F 0 "U?" H 7150 725 30  0000 C CNN
+F 1 "PORT" H 7100 625 30  0000 C CNN
+F 2 "" H 7100 625 60  0000 C CNN
+F 3 "" H 7100 625 60  0000 C CNN
+	1    7100 625 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB5F46
+P 7650 575
+F 0 "U?" H 7700 675 30  0000 C CNN
+F 1 "PORT" H 7650 575 30  0000 C CNN
+F 2 "" H 7650 575 60  0000 C CNN
+F 3 "" H 7650 575 60  0000 C CNN
+	1    7650 575 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB5F90
+P 8175 550
+F 0 "U?" H 8225 650 30  0000 C CNN
+F 1 "PORT" H 8175 550 30  0000 C CNN
+F 2 "" H 8175 550 60  0000 C CNN
+F 3 "" H 8175 550 60  0000 C CNN
+	1    8175 550 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB5FF1
+P 8725 550
+F 0 "U?" H 8775 650 30  0000 C CNN
+F 1 "PORT" H 8725 550 30  0000 C CNN
+F 2 "" H 8725 550 60  0000 C CNN
+F 3 "" H 8725 550 60  0000 C CNN
+	1    8725 550 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB6071
+P 9275 550
+F 0 "U?" H 9325 650 30  0000 C CNN
+F 1 "PORT" H 9275 550 30  0000 C CNN
+F 2 "" H 9275 550 60  0000 C CNN
+F 3 "" H 9275 550 60  0000 C CNN
+	1    9275 550 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB6138
+P 9825 525
+F 0 "U?" H 9875 625 30  0000 C CNN
+F 1 "PORT" H 9825 525 30  0000 C CNN
+F 2 "" H 9825 525 60  0000 C CNN
+F 3 "" H 9825 525 60  0000 C CNN
+	1    9825 525 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB6196
+P 10350 550
+F 0 "U?" H 10400 650 30  0000 C CNN
+F 1 "PORT" H 10350 550 30  0000 C CNN
+F 2 "" H 10350 550 60  0000 C CNN
+F 3 "" H 10350 550 60  0000 C CNN
+	1    10350 550 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB61E3
+P 11050 975
+F 0 "U?" H 11100 1075 30  0000 C CNN
+F 1 "PORT" H 11050 975 30  0000 C CNN
+F 2 "" H 11050 975 60  0000 C CNN
+F 3 "" H 11050 975 60  0000 C CNN
+	1    11050 975 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U?
+U 1 1 60DB6267
+P 10425 2575
+F 0 "U?" H 10475 2675 30  0000 C CNN
+F 1 "PORT" H 10425 2575 30  0000 C CNN
+F 2 "" H 10425 2575 60  0000 C CNN
+F 3 "" H 10425 2575 60  0000 C CNN
+	1    10425 2575
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

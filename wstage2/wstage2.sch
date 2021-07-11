@@ -1,0 +1,385 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:wstage2-cache
+LIBS:wstage-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L and_gate x3
+U 1 1 60DB56D1
+P 4275 1525
+F 0 "x3" H 4225 1725 60  0000 C CNN
+F 1 "and_gate" H 4250 1325 60  0000 C CNN
+F 2 "" H 4275 1525 60  0001 C CNN
+F 3 "" H 4275 1525 60  0001 C CNN
+	1    4275 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 7 1 60DB56D4
+P 2850 1600
+F 0 "U1" H 2900 1700 30  0000 C CNN
+F 1 "PORT" H 2850 1600 30  0000 C CNN
+F 2 "" H 2850 1600 60  0000 C CNN
+F 3 "" H 2850 1600 60  0000 C CNN
+	7    2850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 9 1 60DB56D5
+P 3575 750
+F 0 "U1" H 3625 850 30  0000 C CNN
+F 1 "PORT" H 3575 750 30  0000 C CNN
+F 2 "" H 3575 750 60  0000 C CNN
+F 3 "" H 3575 750 60  0000 C CNN
+	9    3575 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L PORT U1
+U 11 1 60DB56D6
+P 7200 1525
+F 0 "U1" H 7250 1625 30  0000 C CNN
+F 1 "PORT" H 7200 1525 30  0000 C CNN
+F 2 "" H 7200 1525 60  0000 C CNN
+F 3 "" H 7200 1525 60  0000 C CNN
+	11   7200 1525
+	-1   0    0    1   
+$EndComp
+$Comp
+L halfadder x5
+U 1 1 60DB56DE
+P 5825 1475
+F 0 "x5" H 5500 875 60  0000 C CNN
+F 1 "halfadder" H 5650 1225 60  0000 C CNN
+F 2 "" V 5650 1225 60  0001 C CNN
+F 3 "" V 5650 1225 60  0001 C CNN
+	1    5825 1475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PORT U1
+U 2 1 60DB56E9
+P 2325 1775
+F 0 "U1" H 2375 1875 30  0000 C CNN
+F 1 "PORT" H 2325 1775 30  0000 C CNN
+F 2 "" H 2325 1775 60  0000 C CNN
+F 3 "" H 2325 1775 60  0000 C CNN
+	2    2325 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L and_gate x2
+U 1 1 60DB56F2
+P 4225 3925
+F 0 "x2" H 4175 4125 60  0000 C CNN
+F 1 "and_gate" H 4200 3725 60  0000 C CNN
+F 2 "" H 4225 3925 60  0001 C CNN
+F 3 "" H 4225 3925 60  0001 C CNN
+	1    4225 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 6 1 60DB56F3
+P 2825 4000
+F 0 "U1" H 2875 4100 30  0000 C CNN
+F 1 "PORT" H 2825 4000 30  0000 C CNN
+F 2 "" H 2825 4000 60  0000 C CNN
+F 3 "" H 2825 4000 60  0000 C CNN
+	6    2825 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 3 1 60DB56F5
+P 2375 4175
+F 0 "U1" H 2425 4275 30  0000 C CNN
+F 1 "PORT" H 2375 4175 30  0000 C CNN
+F 2 "" H 2375 4175 60  0000 C CNN
+F 3 "" H 2375 4175 60  0000 C CNN
+	3    2375 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L and_gate x4
+U 1 1 60DB56F6
+P 4275 5125
+F 0 "x4" H 4225 5325 60  0000 C CNN
+F 1 "and_gate" H 4250 4925 60  0000 C CNN
+F 2 "" H 4275 5125 60  0001 C CNN
+F 3 "" H 4275 5125 60  0001 C CNN
+	1    4275 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 8 1 60DB56F7
+P 2850 5200
+F 0 "U1" H 2900 5300 30  0000 C CNN
+F 1 "PORT" H 2850 5200 30  0000 C CNN
+F 2 "" H 2850 5200 60  0000 C CNN
+F 3 "" H 2850 5200 60  0000 C CNN
+	8    2850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1450 3575 1450
+Connection ~ 3575 1450
+Wire Wire Line
+	3850 1600 3100 1600
+Wire Wire Line
+	6550 1525 6950 1525
+Wire Wire Line
+	4625 1525 5575 1525
+Wire Wire Line
+	5575 1775 2575 1775
+Wire Wire Line
+	5950 2350 5950 2125
+Wire Wire Line
+	3800 4000 3075 4000
+Wire Wire Line
+	5575 3925 4575 3925
+Wire Wire Line
+	5575 4175 2625 4175
+Wire Wire Line
+	3575 5050 3850 5050
+Connection ~ 3575 5050
+Wire Wire Line
+	3850 5200 3100 5200
+Wire Wire Line
+	4625 5125 5575 5125
+Wire Wire Line
+	3575 3850 3800 3850
+Connection ~ 3575 3850
+Connection ~ 3575 2625
+Wire Wire Line
+	3575 2625 3800 2625
+Wire Wire Line
+	5575 2950 2550 2950
+Wire Wire Line
+	5575 2700 4575 2700
+Wire Wire Line
+	3800 2775 3075 2775
+$Comp
+L PORT U1
+U 1 1 60DB56E8
+P 2300 2950
+F 0 "U1" H 2350 3050 30  0000 C CNN
+F 1 "PORT" H 2300 2950 30  0000 C CNN
+F 2 "" H 2300 2950 60  0000 C CNN
+F 3 "" H 2300 2950 60  0000 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 5 1 60DB56D3
+P 2825 2775
+F 0 "U1" H 2875 2875 30  0000 C CNN
+F 1 "PORT" H 2825 2775 30  0000 C CNN
+F 2 "" H 2825 2775 60  0000 C CNN
+F 3 "" H 2825 2775 60  0000 C CNN
+	5    2825 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L and_gate x1
+U 1 1 60DB56D2
+P 4225 2700
+F 0 "x1" H 4175 2900 60  0000 C CNN
+F 1 "and_gate" H 4200 2500 60  0000 C CNN
+F 2 "" H 4225 2700 60  0001 C CNN
+F 3 "" H 4225 2700 60  0001 C CNN
+	1    4225 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L fulladder x6
+U 1 1 60DB56DF
+P 5825 2650
+F 0 "x6" H 5500 2050 60  0000 C CNN
+F 1 "fulladder" H 5650 2400 60  0000 C CNN
+F 2 "" V 5650 2400 60  0001 C CNN
+F 3 "" V 5650 2400 60  0001 C CNN
+	1    5825 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3575 1000 3575 5050
+Wire Wire Line
+	5950 3300 5950 3575
+$Comp
+L PORT U1
+U 12 1 60DBC332
+P 7200 2700
+F 0 "U1" H 7250 2800 30  0000 C CNN
+F 1 "PORT" H 7200 2700 30  0000 C CNN
+F 2 "" H 7200 2700 60  0000 C CNN
+F 3 "" H 7200 2700 60  0000 C CNN
+	12   7200 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 14 1 60DBC338
+P 7225 5125
+F 0 "U1" H 7275 5225 30  0000 C CNN
+F 1 "PORT" H 7225 5125 30  0000 C CNN
+F 2 "" H 7225 5125 60  0000 C CNN
+F 3 "" H 7225 5125 60  0000 C CNN
+	14   7225 5125
+	-1   0    0    1   
+$EndComp
+$Comp
+L PORT U1
+U 10 1 60DBC33E
+P 5950 7000
+F 0 "U1" H 6000 7100 30  0000 C CNN
+F 1 "PORT" H 5950 7000 30  0000 C CNN
+F 2 "" H 5950 7000 60  0000 C CNN
+F 3 "" H 5950 7000 60  0000 C CNN
+	10   5950 7000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 5725 5950 6750
+Wire Wire Line
+	6550 5125 6975 5125
+Wire Wire Line
+	6550 2700 6950 2700
+Wire Wire Line
+	6550 3925 6975 3925
+$Comp
+L PORT U1
+U 13 1 60DBC39A
+P 7225 3925
+F 0 "U1" H 7275 4025 30  0000 C CNN
+F 1 "PORT" H 7225 3925 30  0000 C CNN
+F 2 "" H 7225 3925 60  0000 C CNN
+F 3 "" H 7225 3925 60  0000 C CNN
+	13   7225 3925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7175 4150 7175 4200
+$Comp
+L fulladder x7
+U 1 1 60DB56F4
+P 5825 3875
+F 0 "x7" H 5500 3275 60  0000 C CNN
+F 1 "fulladder" H 5650 3625 60  0000 C CNN
+F 2 "" V 5650 3625 60  0001 C CNN
+F 3 "" V 5650 3625 60  0001 C CNN
+	1    5825 3875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L fulladder x8
+U 1 1 60DBCFBC
+P 5825 5075
+F 0 "x8" H 5500 4475 60  0000 C CNN
+F 1 "fulladder" H 5650 4825 60  0000 C CNN
+F 2 "" V 5650 4825 60  0001 C CNN
+F 3 "" V 5650 4825 60  0001 C CNN
+	1    5825 5075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 4525 5950 4775
+Text Label 3200 1600 0    60   ~ 0
+p0
+Text Label 3175 2775 0    60   ~ 0
+p1
+Text Label 3200 4000 0    60   ~ 0
+p2
+Text Label 3225 5200 0    60   ~ 0
+p3
+Text Label 3225 1775 0    60   ~ 0
+q0
+Text Label 3150 2950 0    60   ~ 0
+q1
+Text Label 3225 4175 0    60   ~ 0
+q2
+Text Label 3575 1125 0    60   ~ 0
+r0
+Text Label 6700 1525 0    60   ~ 0
+s0
+Text Label 6800 2700 0    60   ~ 0
+s1
+Text Label 6800 3925 0    60   ~ 0
+s2
+Text Label 6850 5125 0    60   ~ 0
+s3
+Text Label 5950 6675 3    60   ~ 0
+s4
+$Comp
+L PORT U1
+U 4 1 60DC4330
+P 2400 5550
+F 0 "U1" H 2450 5650 30  0000 C CNN
+F 1 "PORT" H 2400 5550 30  0000 C CNN
+F 2 "" H 2400 5550 60  0000 C CNN
+F 3 "" H 2400 5550 60  0000 C CNN
+	4    2400 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5375 5550 5550
+Wire Wire Line
+	5550 5550 2650 5550
+Wire Wire Line
+	5550 5375 5575 5375
+Text Label 3250 5550 0    60   ~ 0
+q3
+$EndSCHEMATC

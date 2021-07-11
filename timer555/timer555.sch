@@ -1,0 +1,783 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:timer555-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mosfet_p M2
+U 1 1 60C8DEF0
+P 2300 3000
+F 0 "M2" H 2250 3050 50  0000 R CNN
+F 1 "mosfet_p" H 2350 3150 50  0000 R CNN
+F 2 "" H 2550 3100 29  0000 C CNN
+F 3 "" H 2350 3000 60  0000 C CNN
+	1    2300 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L mosfet_p M4
+U 1 1 60C8E050
+P 2850 3000
+F 0 "M4" H 2800 3050 50  0000 R CNN
+F 1 "mosfet_p" H 2900 3150 50  0000 R CNN
+F 2 "" H 3100 3100 29  0000 C CNN
+F 3 "" H 2900 3000 60  0000 C CNN
+	1    2850 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L mosfet_n M9
+U 1 1 60C8E0B8
+P 4800 5050
+F 0 "M9" H 4800 4900 50  0000 R CNN
+F 1 "mosfet_n" H 4900 5000 50  0000 R CNN
+F 2 "" H 5100 4750 29  0000 C CNN
+F 3 "" H 4900 4850 60  0000 C CNN
+	1    4800 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L mosfet_n M11
+U 1 1 60C8E12E
+P 5300 5050
+F 0 "M11" H 5300 4900 50  0000 R CNN
+F 1 "mosfet_n" H 5400 5000 50  0000 R CNN
+F 2 "" H 5600 4750 29  0000 C CNN
+F 3 "" H 5400 4850 60  0000 C CNN
+	1    5300 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L resistor R2
+U 1 1 60C8E1F1
+P 3900 2900
+F 0 "R2" H 3950 3030 50  0000 C CNN
+F 1 "resistor" H 3950 2850 50  0000 C CNN
+F 2 "" H 3950 2880 30  0000 C CNN
+F 3 "" V 3950 2950 30  0000 C CNN
+	1    3900 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L mosfet_p M7
+U 1 1 60C8E488
+P 3450 3000
+F 0 "M7" H 3400 3050 50  0000 R CNN
+F 1 "mosfet_p" H 3500 3150 50  0000 R CNN
+F 2 "" H 3700 3100 29  0000 C CNN
+F 3 "" H 3500 3000 60  0000 C CNN
+	1    3450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M3
+U 1 1 60C8E64B
+P 2350 5100
+F 0 "M3" H 2350 4950 50  0000 R CNN
+F 1 "mosfet_n" H 2450 5050 50  0000 R CNN
+F 2 "" H 2650 4800 29  0000 C CNN
+F 3 "" H 2450 4900 60  0000 C CNN
+	1    2350 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L mosfet_n M15
+U 1 1 60C8E1B6
+P 6400 4500
+F 0 "M15" H 6400 4350 50  0000 R CNN
+F 1 "mosfet_n" H 6500 4450 50  0000 R CNN
+F 2 "" H 6700 4200 29  0000 C CNN
+F 3 "" H 6500 4300 60  0000 C CNN
+	1    6400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M13
+U 1 1 60C8E827
+P 6000 4900
+F 0 "M13" H 6000 4750 50  0000 R CNN
+F 1 "mosfet_n" H 6100 4850 50  0000 R CNN
+F 2 "" H 6300 4600 29  0000 C CNN
+F 3 "" H 6100 4700 60  0000 C CNN
+	1    6000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M17
+U 1 1 60C8E863
+P 6950 4100
+F 0 "M17" H 6950 3950 50  0000 R CNN
+F 1 "mosfet_n" H 7050 4050 50  0000 R CNN
+F 2 "" H 7250 3800 29  0000 C CNN
+F 3 "" H 7050 3900 60  0000 C CNN
+	1    6950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M20
+U 1 1 60C8E8D4
+P 8250 4800
+F 0 "M20" H 8250 4650 50  0000 R CNN
+F 1 "mosfet_n" H 8350 4750 50  0000 R CNN
+F 2 "" H 8550 4500 29  0000 C CNN
+F 3 "" H 8350 4600 60  0000 C CNN
+	1    8250 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L mosfet_n M19
+U 1 1 60C8E930
+P 7850 4800
+F 0 "M19" H 7850 4650 50  0000 R CNN
+F 1 "mosfet_n" H 7950 4750 50  0000 R CNN
+F 2 "" H 8150 4500 29  0000 C CNN
+F 3 "" H 7950 4600 60  0000 C CNN
+	1    7850 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L mosfet_p M8
+U 1 1 60C8E989
+P 4450 4300
+F 0 "M8" H 4400 4350 50  0000 R CNN
+F 1 "mosfet_p" H 4500 4450 50  0000 R CNN
+F 2 "" H 4700 4400 29  0000 C CNN
+F 3 "" H 4500 4300 60  0000 C CNN
+	1    4450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_p M12
+U 1 1 60C8E9E1
+P 5650 4300
+F 0 "M12" H 5600 4350 50  0000 R CNN
+F 1 "mosfet_p" H 5700 4450 50  0000 R CNN
+F 2 "" H 5900 4400 29  0000 C CNN
+F 3 "" H 5700 4300 60  0000 C CNN
+	1    5650 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M5
+U 1 1 60C8EA55
+P 3200 3550
+F 0 "M5" H 3200 3400 50  0000 R CNN
+F 1 "mosfet_n" H 3300 3500 50  0000 R CNN
+F 2 "" H 3500 3250 29  0000 C CNN
+F 3 "" H 3300 3350 60  0000 C CNN
+	1    3200 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M1
+U 1 1 60C8EAC5
+P 1950 3550
+F 0 "M1" H 1950 3400 50  0000 R CNN
+F 1 "mosfet_n" H 2050 3500 50  0000 R CNN
+F 2 "" H 2250 3250 29  0000 C CNN
+F 3 "" H 2050 3350 60  0000 C CNN
+	1    1950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_p M10
+U 1 1 60C8ED92
+P 4850 2950
+F 0 "M10" H 4800 3000 50  0000 R CNN
+F 1 "mosfet_p" H 4900 3100 50  0000 R CNN
+F 2 "" H 5100 3050 29  0000 C CNN
+F 3 "" H 4900 2950 60  0000 C CNN
+	1    4850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M6
+U 1 1 60C8F45A
+P 3400 5100
+F 0 "M6" H 3400 4950 50  0000 R CNN
+F 1 "mosfet_n" H 3500 5050 50  0000 R CNN
+F 2 "" H 3700 4800 29  0000 C CNN
+F 3 "" H 3500 4900 60  0000 C CNN
+	1    3400 5100
+	1    0    0    1   
+$EndComp
+$Comp
+L resistor R3
+U 1 1 60C8FAA0
+P 3900 4050
+F 0 "R3" H 3950 4180 50  0000 C CNN
+F 1 "resistor" H 3950 4000 50  0000 C CNN
+F 2 "" H 3950 4030 30  0000 C CNN
+F 3 "" V 3950 4100 30  0000 C CNN
+	1    3900 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R4
+U 1 1 60C8FAFF
+P 3900 4900
+F 0 "R4" H 3950 5030 50  0000 C CNN
+F 1 "resistor" H 3950 4850 50  0000 C CNN
+F 2 "" H 3950 4880 30  0000 C CNN
+F 3 "" V 3950 4950 30  0000 C CNN
+	1    3900 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L resistor R1
+U 1 1 60C90310
+P 3550 4050
+F 0 "R1" H 3600 4180 50  0000 C CNN
+F 1 "resistor" H 3600 4000 50  0000 C CNN
+F 2 "" H 3600 4030 30  0000 C CNN
+F 3 "" V 3600 4100 30  0000 C CNN
+	1    3550 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L mosfet_p M14
+U 1 1 60C92CBC
+P 6050 3450
+F 0 "M14" H 6000 3500 50  0000 R CNN
+F 1 "mosfet_p" H 6100 3600 50  0000 R CNN
+F 2 "" H 6300 3550 29  0000 C CNN
+F 3 "" H 6100 3450 60  0000 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_p M16
+U 1 1 60C92D4C
+P 6650 3450
+F 0 "M16" H 6600 3500 50  0000 R CNN
+F 1 "mosfet_p" H 6700 3600 50  0000 R CNN
+F 2 "" H 6900 3550 29  0000 C CNN
+F 3 "" H 6700 3450 60  0000 C CNN
+	1    6650 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mosfet_p M18
+U 1 1 60C92ED6
+P 7500 2850
+F 0 "M18" H 7450 2900 50  0000 R CNN
+F 1 "mosfet_p" H 7550 3000 50  0000 R CNN
+F 2 "" H 7750 2950 29  0000 C CNN
+F 3 "" H 7550 2850 60  0000 C CNN
+	1    7500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_p M21
+U 1 1 60C92F50
+P 8300 2850
+F 0 "M21" H 8250 2900 50  0000 R CNN
+F 1 "mosfet_p" H 8350 3000 50  0000 R CNN
+F 2 "" H 8550 2950 29  0000 C CNN
+F 3 "" H 8350 2850 60  0000 C CNN
+	1    8300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M22
+U 1 1 60C94E21
+P 9000 4800
+F 0 "M22" H 9000 4650 50  0000 R CNN
+F 1 "mosfet_n" H 9100 4750 50  0000 R CNN
+F 2 "" H 9300 4500 29  0000 C CNN
+F 3 "" H 9100 4600 60  0000 C CNN
+	1    9000 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L mosfet_n M25
+U 1 1 60C94E8D
+P 9800 4800
+F 0 "M25" H 9800 4650 50  0000 R CNN
+F 1 "mosfet_n" H 9900 4750 50  0000 R CNN
+F 2 "" H 10100 4500 29  0000 C CNN
+F 3 "" H 9900 4600 60  0000 C CNN
+	1    9800 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L mosfet_n M24
+U 1 1 60C94F14
+P 9550 5300
+F 0 "M24" H 9550 5150 50  0000 R CNN
+F 1 "mosfet_n" H 9650 5250 50  0000 R CNN
+F 2 "" H 9850 5000 29  0000 C CNN
+F 3 "" H 9650 5100 60  0000 C CNN
+	1    9550 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L mosfet_p M23
+U 1 1 60C95006
+P 9050 3900
+F 0 "M23" H 9000 3950 50  0000 R CNN
+F 1 "mosfet_p" H 9100 4050 50  0000 R CNN
+F 2 "" H 9300 4000 29  0000 C CNN
+F 3 "" H 9100 3900 60  0000 C CNN
+	1    9050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_p M26
+U 1 1 60C95089
+P 9850 3900
+F 0 "M26" H 9800 3950 50  0000 R CNN
+F 1 "mosfet_p" H 9900 4050 50  0000 R CNN
+F 2 "" H 10100 4000 29  0000 C CNN
+F 3 "" H 9900 3900 60  0000 C CNN
+	1    9850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4900 3300 4900
+Wire Wire Line
+	2150 4700 2150 3950
+Wire Wire Line
+	2150 3950 3000 3950
+Wire Wire Line
+	2050 4750 1900 4750
+Wire Wire Line
+	1900 4750 1900 5100
+Wire Wire Line
+	1900 5100 2150 5100
+Wire Wire Line
+	2250 3900 2900 3900
+Wire Wire Line
+	3700 4750 3800 4750
+Wire Wire Line
+	3800 4750 3800 5100
+Wire Wire Line
+	3800 5100 3600 5100
+Wire Wire Line
+	2150 5100 2150 5450
+Wire Wire Line
+	1300 5450 10000 5450
+Wire Wire Line
+	3600 5100 3600 5450
+Wire Wire Line
+	2150 3200 2150 3550
+Wire Wire Line
+	3000 3200 3000 3550
+Wire Wire Line
+	3000 2350 3000 2800
+Wire Wire Line
+	1350 2350 10000 2350
+Wire Wire Line
+	2150 2350 2150 2800
+Wire Wire Line
+	2050 2850 2050 2750
+Wire Wire Line
+	2050 2750 2150 2750
+Connection ~ 2150 2750
+Wire Wire Line
+	3100 2850 3100 2750
+Wire Wire Line
+	3100 2750 3000 2750
+Connection ~ 3000 2750
+Wire Wire Line
+	2450 3000 2700 3000
+Wire Wire Line
+	2550 3000 2550 3300
+Wire Wire Line
+	2550 3300 3000 3300
+Connection ~ 3000 3300
+Connection ~ 2550 3000
+Wire Wire Line
+	3950 5450 3950 5100
+Connection ~ 3600 5450
+Wire Wire Line
+	2400 3900 2400 5450
+Connection ~ 2400 5450
+Connection ~ 2400 3900
+Connection ~ 3000 2350
+Connection ~ 3300 4900
+Wire Wire Line
+	1850 3750 1350 3750
+Wire Wire Line
+	3300 3750 3300 4100
+Wire Wire Line
+	3300 4100 1350 4100
+Connection ~ 2150 5450
+Wire Wire Line
+	3600 3200 3600 3950
+Wire Wire Line
+	3600 4250 3600 4700
+Wire Wire Line
+	3950 2350 3950 2800
+Wire Wire Line
+	3950 3100 3950 3950
+Wire Wire Line
+	3950 4250 3950 4800
+Wire Wire Line
+	3300 3750 3950 3750
+Connection ~ 3950 3750
+Wire Wire Line
+	4900 4850 5200 4850
+Wire Wire Line
+	4600 4650 4900 4650
+Wire Wire Line
+	4900 4650 4900 4850
+Wire Wire Line
+	4600 4500 4600 4650
+Wire Wire Line
+	5500 4500 5500 4650
+Wire Wire Line
+	4700 4450 5400 4450
+Wire Wire Line
+	4300 4300 3950 4300
+Connection ~ 3950 4300
+Wire Wire Line
+	4500 4700 4400 4700
+Wire Wire Line
+	4400 4700 4400 5050
+Wire Wire Line
+	4400 5050 4600 5050
+Wire Wire Line
+	4600 5050 4600 5450
+Wire Wire Line
+	5500 5450 5500 5050
+Wire Wire Line
+	5600 4700 5700 4700
+Wire Wire Line
+	5700 4700 5700 5050
+Wire Wire Line
+	5700 5050 5500 5050
+Connection ~ 4600 5450
+Connection ~ 3950 5450
+Wire Wire Line
+	4600 4100 5500 4100
+Wire Wire Line
+	5000 3150 5000 4450
+Connection ~ 5000 4100
+Connection ~ 5000 4450
+Wire Wire Line
+	5000 2350 5000 2750
+Connection ~ 3950 2350
+Wire Wire Line
+	3300 3000 3300 3300
+Connection ~ 3600 3300
+Wire Wire Line
+	4700 3300 4700 2950
+Connection ~ 4700 3300
+Wire Wire Line
+	3300 3300 5550 3300
+Wire Wire Line
+	3600 4650 3300 4650
+Wire Wire Line
+	3300 4650 3300 5550
+Connection ~ 3600 4650
+Wire Wire Line
+	5800 4300 6000 4300
+Wire Wire Line
+	6000 4300 6000 4550
+Wire Wire Line
+	6000 4550 1350 4550
+Connection ~ 2150 2350
+Wire Wire Line
+	6200 3650 6200 4900
+Wire Wire Line
+	6200 4700 6300 4700
+Wire Wire Line
+	6200 5450 6200 5300
+Wire Wire Line
+	6600 4900 6600 5700
+Connection ~ 6200 4700
+Wire Wire Line
+	5500 4500 6100 4500
+Wire Wire Line
+	6100 4500 6100 4300
+Wire Wire Line
+	6100 4300 6850 4300
+Connection ~ 5500 4500
+Wire Wire Line
+	6500 3650 6500 4300
+Connection ~ 6500 4300
+Wire Wire Line
+	3300 5550 5900 5550
+Wire Wire Line
+	5900 5550 5900 5100
+Wire Wire Line
+	5900 3450 2150 3450
+Connection ~ 2150 3450
+Wire Wire Line
+	5550 3300 5550 2850
+Wire Wire Line
+	5550 2850 7350 2850
+Wire Wire Line
+	6200 2350 6200 3250
+Connection ~ 5000 2350
+Wire Wire Line
+	6500 2350 6500 3250
+Connection ~ 6200 2350
+Wire Wire Line
+	6300 5250 6300 5300
+Wire Wire Line
+	6300 5300 6200 5300
+Wire Wire Line
+	6700 4850 6700 4950
+Wire Wire Line
+	6700 4950 6600 4950
+Connection ~ 6600 4950
+Connection ~ 6200 5300
+Wire Wire Line
+	7650 3050 7650 4400
+Wire Wire Line
+	8450 3050 8450 4400
+Wire Wire Line
+	7200 2850 7200 3300
+Wire Wire Line
+	7200 3300 8150 3300
+Wire Wire Line
+	8150 3300 8150 2850
+Connection ~ 7200 2850
+Wire Wire Line
+	8150 4600 7950 4300
+Connection ~ 7650 4300
+Wire Wire Line
+	7950 4600 8150 4300
+Wire Wire Line
+	8150 4300 8450 4300
+Connection ~ 8450 4300
+Wire Wire Line
+	7950 4300 7650 4300
+Connection ~ 6600 5450
+Connection ~ 5500 5450
+Connection ~ 6200 5450
+Wire Wire Line
+	7650 4800 7650 5450
+Connection ~ 7650 5450
+Wire Wire Line
+	8450 4800 8450 5450
+Wire Wire Line
+	8450 4850 8650 4850
+Wire Wire Line
+	8550 4450 8650 4450
+Wire Wire Line
+	8650 4450 8650 4850
+Connection ~ 8450 5450
+Connection ~ 8450 4850
+Wire Wire Line
+	7550 4450 7450 4450
+Wire Wire Line
+	7450 4450 7450 4850
+Wire Wire Line
+	7450 4850 7650 4850
+Connection ~ 7650 4850
+Wire Wire Line
+	7150 4500 7150 5450
+Connection ~ 7150 5450
+Wire Wire Line
+	7250 4450 7250 4550
+Wire Wire Line
+	7250 4550 7150 4550
+Connection ~ 7150 4550
+Wire Wire Line
+	8450 2350 8450 2650
+Connection ~ 6500 2350
+Wire Wire Line
+	7650 2650 7650 2350
+Connection ~ 7650 2350
+Wire Wire Line
+	9200 4100 9200 4400
+Wire Wire Line
+	10000 4100 10000 4400
+Wire Wire Line
+	8900 3900 8900 4600
+Wire Wire Line
+	8500 4300 8900 4300
+Connection ~ 8900 4300
+Connection ~ 10000 4300
+Connection ~ 9200 4300
+Wire Wire Line
+	9700 3900 9700 4600
+Wire Wire Line
+	9200 4300 9700 4300
+Connection ~ 9700 4300
+Wire Wire Line
+	10000 5450 10000 4800
+Wire Wire Line
+	9450 5100 9450 4300
+Connection ~ 9450 4300
+Wire Wire Line
+	9850 4950 9900 4950
+Wire Wire Line
+	9900 4950 9900 5300
+Wire Wire Line
+	9900 5300 9750 5300
+Wire Wire Line
+	9750 5300 9750 5450
+Connection ~ 9750 5450
+Wire Wire Line
+	9750 4900 10350 4900
+Wire Wire Line
+	10000 4300 10350 4300
+Wire Wire Line
+	10000 2350 10000 3700
+Connection ~ 8450 2350
+Wire Wire Line
+	9200 2350 9200 3700
+Connection ~ 9200 2350
+Wire Wire Line
+	9300 4050 9400 4050
+Wire Wire Line
+	9400 4050 9400 3700
+Wire Wire Line
+	9400 3700 9200 3700
+Wire Wire Line
+	10100 4050 10200 4050
+Wire Wire Line
+	10200 4050 10200 3700
+Wire Wire Line
+	10200 3700 10000 3700
+Wire Wire Line
+	9200 4800 9200 5450
+Connection ~ 9200 5450
+Wire Wire Line
+	9300 4450 9350 4450
+Wire Wire Line
+	9350 4450 9350 4800
+Wire Wire Line
+	9350 4800 9200 4800
+Wire Wire Line
+	10100 4450 10150 4450
+Wire Wire Line
+	10150 4450 10150 4800
+Wire Wire Line
+	10150 4800 10000 4800
+Wire Wire Line
+	6800 3450 10350 3450
+Wire Wire Line
+	8550 3000 8650 3000
+Wire Wire Line
+	8650 3000 8650 2650
+Wire Wire Line
+	8650 2650 8450 2650
+Wire Wire Line
+	7750 3000 7850 3000
+Wire Wire Line
+	7850 3000 7850 2650
+Wire Wire Line
+	7850 2650 7650 2650
+Text Label 10350 3450 0    60   ~ 0
+~RESET
+Connection ~ 10350 3450
+Connection ~ 10350 4300
+Connection ~ 10350 4900
+Text Label 10350 4300 0    60   ~ 0
+OUT
+Text Label 10350 4900 0    60   ~ 0
+DISCHARGE
+Text Label 1350 2350 2    60   ~ 0
+VCC
+Connection ~ 1350 2350
+Connection ~ 1350 4100
+Connection ~ 1350 4550
+Text Label 1350 3750 2    60   ~ 0
+THRESHOLD
+Text Label 1350 4100 2    60   ~ 0
+CONT
+Text Label 1350 4550 2    60   ~ 0
+TRIG
+Text Label 1300 5450 2    60   ~ 0
+GND
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 60C97AA0
+P 5600 2150
+F 0 "#FLG01" H 5600 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 2300 50  0000 C CNN
+F 2 "" H 5600 2150 50  0001 C CNN
+F 3 "" H 5600 2150 50  0001 C CNN
+	1    5600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 60C97B84
+P 6600 5700
+F 0 "#FLG02" H 6600 5775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 5650 50  0000 C CNN
+F 2 "" H 6600 5700 50  0001 C CNN
+F 3 "" H 6600 5700 50  0001 C CNN
+	1    6600 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2150 5600 2350
+Connection ~ 5600 2350
+Wire Wire Line
+	3600 2800 3600 2350
+Connection ~ 3600 2350
+Wire Wire Line
+	3700 3150 3750 3150
+Wire Wire Line
+	3750 3150 3750 2800
+Wire Wire Line
+	3750 2800 3600 2800
+Wire Wire Line
+	5100 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 2750
+Wire Wire Line
+	5150 2750 5000 2750
+Connection ~ 1350 3750
+Wire Wire Line
+	6300 3600 6400 3600
+Wire Wire Line
+	6350 3600 6350 2350
+Connection ~ 6350 2350
+Connection ~ 6350 3600
+$EndSCHEMATC
